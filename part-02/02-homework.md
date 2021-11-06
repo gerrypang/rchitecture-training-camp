@@ -2,19 +2,19 @@
 
 ## 微信朋友圈功能分析
 
-![微信朋友圈功能](H:\rchitecture-training-camp\part-02\image\微信朋友圈功能.png)
+![微信朋友圈功能](https://github.com/gerrypang/rchitecture-training-camp/blob/part-02/image/微信朋友圈功能.png)
 
 
 
 ## 分析微信朋友圈复杂度
 
-![复杂度](H:\rchitecture-training-camp\part-02\image\复杂度.png)
+![复杂度](https://github.com/gerrypang/rchitecture-training-camp/blob/part-02/image/复杂度.png)
 
-![发朋友圈1](H:\rchitecture-training-camp\part-02\image\发朋友圈1.png)
+![发朋友圈1](https://github.com/gerrypang/rchitecture-training-camp/blob/part-02/image/发朋友圈1.png)
 
 
 
-![查看朋友圈1](H:\rchitecture-training-camp\part-02\image\查看朋友圈1.png)
+![查看朋友圈1](https://github.com/gerrypang/rchitecture-training-camp/blob/part-02/image/查看朋友圈1.png)
 
 
 
@@ -38,7 +38,7 @@
   - 2）对于视频和图片需要我们做单独的分布式文件存储这里选择Fast DFS能够满足基本分布式文件存储需求。
   - 3）此外发送朋友圈后，需要将最新信息推送我的好友，对于这种异步消息，可以考虑MQ消息服务，选择kafka集群
 
-  ![发朋友圈](H:\rchitecture-training-camp\part-02\image\发朋友圈.png)
+  ![发朋友圈](https://github.com/gerrypang/rchitecture-training-camp/blob/part-02/image/发朋友圈.png)
 
 ### 查看友圈设计方案
 
@@ -49,11 +49,11 @@
 - 1）对于近期发送的朋友圈（热数据）查询选择通过redis方式，提升查询性能
 - 2）对于历史发送朋友圈（冷数据）查询选择通过MySQL方式查询。
 
-![查看朋友圈](H:\rchitecture-training-camp\part-02\image\查看朋友圈.png)
+![查看朋友圈](https://github.com/gerrypang/rchitecture-training-camp/blob/part-02/image/查看朋友圈.png)
 
 ### 单机房部署方案
 
-![image-20211107003815658](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211107003815658.png)
+![image-20211107003815658](https://github.com/gerrypang/rchitecture-training-camp/blob/part-02/image/署架构.png)
 
 
 
